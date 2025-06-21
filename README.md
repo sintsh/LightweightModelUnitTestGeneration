@@ -149,16 +149,6 @@ These models are assumed to be fine-tuned versions of `PLBart` using PEFT techni
 - **Analysis**: Open CSVs in Excel or Google Sheets, or use Python/R for visualization (e.g., bar charts of CTC by project).
 - **Expected Outcomes**: `A3Test-LoRA` should have the highest correctness (~38% CTC), `A3Test-QLoRA` the lowest memory usage (~15GB), and `A3Test-Adapter` lower performance due to its design.
 
-## Troubleshooting
-
-- **Missing `project` Column**: If `filtered_ground_truth.csv` lacks a `project` column, results will be labeled `Unknown`. Add the column as described.
-- **Missing Files**: Ensure `filtered_ground_truth.csv` and model folders exist.
-- **Java Tool Errors**: Verify `ANTLR4`, `JUnit`, `JaCoCo`, and `PITest` are installed and configured.
-- **Memory Issues**: Use a GPU-enabled system (e.g., 2×NVIDIA Tesla V100-SXM2 32GB) to avoid crashes.
-- **Defects4J Setup**: Ensure Java 1.8 and Perl dependencies are installed. Set `TZ=America/Los_Angeles` for test execution:
-  ```bash
-  export TZ=America/Los_Angeles
-  ```
 
 ## Project Preparation and Contributions
 
