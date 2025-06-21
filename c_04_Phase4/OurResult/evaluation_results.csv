@@ -1,0 +1,8 @@
+pro-eff,A3Test-LoRA,A3Test-QLoRA,A3Test-Adapter
+CTC,38.12,37.5,5.2
+FMC,36.5,36,0.5
+LC,34.8,34.3,0.3
+CA,43.1,42.5,5
+MS,58,57,42.5
+ATT,1.52,1.5,45
+Memory,19.5,15,37.1
