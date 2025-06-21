@@ -131,9 +131,3 @@ Here’s what the script does in simple terms:
 - **Mixed Precision**: Enabled automatically on GPU to speed up training and reduce memory usage.
 - **Assertion Focus**: The model is trained to understand and generate Java assertions, making it suitable for generating JUnit test cases or similar tasks.
 
-## Troubleshooting
-- **Dataset Not Found**: Ensure the CSV files exist at the specified paths. If using Google Drive, mount it correctly or update the paths.
-- **Hugging Face Login Error**: Verify your token is correct and has write permissions for the `AKPlbart` repository.
-- **Out of Memory Errors**: Reduce `per_device_train_batch_size` (e.g., to 2) or use a smaller `block_size` (e.g., 512).
-- **TensorBoard Issues**: Ensure the `./logs` directory exists and TensorBoard is installed.
-- **Slow Tokenization**: If preprocessing is slow, reduce `num_proc` (e.g., to 2) to use fewer CPU cores.
