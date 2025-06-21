@@ -31,14 +31,14 @@ Follow these steps to set up and run the program:
 2. **Run Hyperparameter Tuning**:
    To perform hyperparameter tuning, use the `--tune` flag:
    ```bash
-   python your_script_name.py --tune
+   python hyperparameterTuner.py --tune
    ```
-   Replace `your_script_name.py` with the name of the Python file containing the code. This will test different values for LoRA rank, learning rate, batch size, and quantization (if on GPU).
+   Replace `hyperparameterTuner.py` with the name of the Python file containing the code. This will test different values for LoRA rank, learning rate, batch size, and quantization (if on GPU).
 
 3. **Train with Optimal Parameters**:
    To train the model directly with the default optimal parameters, run:
    ```bash
-   python your_script_name.py
+   python hyperparameterTuner.py
    ```
    This skips tuning and uses the pre-defined best parameters.
 
